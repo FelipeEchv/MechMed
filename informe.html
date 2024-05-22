@@ -1,0 +1,238 @@
+<!doctype html>
+<lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+ <!--barra de navegacion-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><span>MechMed</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./servicios.html" >SERVICIOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">¿TIENES DUDAS?</a>
+        </li></ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="email" placeholder="Correo electrónico" aria-label="correo">
+        <button class="btn btn-outline-success" type="button" id="boton">Suscribete</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+  </head>
+
+
+    <body class="bg-secondary-subtle">      
+
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">INFORME DE SERVICIO TALLER Y TERRENO</h2>
+        <form>
+          <form><!--aqui esta toda la informacion OT-->
+          <div class="row">
+            <div class="col-md-3">
+              <label for="ordenServicio" class="form-label">Orden de Servicio</label>
+              <input type="text" class="form-control" id="ordenServicio" name="ordenServicio">
+            </div>
+          </div>
+        </form>
+        <form><!--aqui esta toda la informacion de cliente|mecanico|terreno-->
+          <div class="row">
+            <h5 class="container mt-3" >Datos del cliente</h5>
+            <div class="col-md-12">
+              <label for="nombreEmpresa" class="form-label">Nombre Empresa</label>
+              <input type="text" class="form-control" id="nombreEmpresa" name="nombreEmpresa">
+            </div>
+            <div class="col-md-6">
+              <label for="contactoCliente" class="form-label">Contacto Cliente</label>
+              <input type="text" class="form-control" id="contactoCliente" name="contactoCliente">
+            </div>
+            <div class="col-md-3">
+              <label for="cargoContacto" class="form-label">Cargo Contacto</label>
+              <input type="text" class="form-control" id="cargoContacto" name="cargoContacto">
+            </div>
+            <div class="col-md-3">
+              <label for="numeroContacto" class="form-label">Número Contacto</label>
+              <input type="text" class="form-control" id="numeroContacto" name="numeroContacto">
+            </div>
+            <h5 class="container mt-3" >Datos del tecnico</h5>
+            <div class="col-md-6">
+              <label for="nombreTecnico" class="form-label">Nombre Técnico</label>
+              <input type="text" class="form-control" id="nombreTecnico" name="nombreTecnico">
+            </div>
+            <div class="col-md-3">
+              <label for="cargoTecnico" class="form-label">Cargo Técnico</label>
+              <select class="form-select" aria-label="cargoTecnico">
+                <option selected>Seleccione...</option>
+                <option value="1">Tecnico Mecanico</option>
+                <option value="2">Mecanico A</option>
+                <option value="3">Mecanico B</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="numeroContacto" class="form-label">Número Contacto</label>
+              <input type="text" class="form-control" id="numeroContacto" name="numeroContacto">
+            </div>
+            <h5 class="container mt-3" >Datos del equipo</h5>
+            <div class="col-md-2">
+              <label for="marcaEquipo" class="form-label">Marca Equipo</label>
+              <input type="text" class="form-control" id="marcaEquipo" name="marcaEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="modeloEquipo" class="form-label">Modelo Equipo</label>
+              <input type="text" class="form-control" id="modeloEquipo" name="modeloEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="serieEquipo" class="form-label">Serie Equipo</label>
+              <input type="text" class="form-control" id="serieEquipo" name="serieEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="numeroIntEquipo" class="form-label">N° interno Equipo</label>
+              <input type="text" class="form-control" id="numeroIntEquipo" name="numeroIntEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="horasEquipo" class="form-label">Horas Equipo</label>
+              <input type="text" class="form-control" id="horasEquipo" name="horasEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="AplicacionEquipo" class="form-label">Horas Equipo</label>
+              <input type="text" class="form-control" id="AplicacionEquipo" name="AplicacionEquipo">
+            </div>
+            <h5 class="container mt-3" >Datos de servicio terreno</h5>
+            <div class="col-md-2">
+              <label for="salidaTaller" class="form-label">Salida Taller</label>
+              <input type="text" class="form-control" id="salidaTaller" name="salidaTaller">
+            </div>
+            <div class="col-md-2">
+              <label for="llegadaFaena" class="form-label">Llegada faena</label>
+              <input type="text" class="form-control" id="llegadaFaena" name="llegadaFaena">
+            </div>
+            <div class="col-md-2">
+              <label for="recepcionEquipo" class="form-label">Recepcion equipo</label>
+              <input type="text" class="form-control" id="recepcionEquipo" name="recepcionEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="entregaEquipo" class="form-label">Entrega equipo</label>
+              <input type="text" class="form-control" id="entregaEquipo" name="entregaEquipo">
+            </div>
+            <div class="col-md-2">
+              <label for="salidaFaena" class="form-label">Salida faena</label>
+              <input type="text" class="form-control" id="salidaFaena" name="salidaFaena">
+            </div>
+            <div class="col-md-2">
+              <label for="llegadaTaller" class="form-label">Llegada Taller</label>
+              <input type="text" class="form-control" id="llegadaTaller" name="llegadaTaller">
+            </div>
+            <h5 class="container mt-5" >Trabajo Solicitado</h5>
+            <div class="col-md-12 mt-2" class="form-floating">
+              <textarea class="form-control" placeholder="Escriba el/los trabajo/s solicitado/s" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <h5 class="container mt-5" >Trabajo Realizado</h5>
+            <div class="col-md-12 mt-2" class="form-floating">
+              <textarea class="form-control" placeholder="Escriba el/los trabajo/s realizado/s" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <h5 class="container mt-5" >Observación y Evaluación</h5>
+            <div class="col-md-12 mt-2" class="form-floating">
+              <textarea class="form-control" placeholder="Escriba las obervaciones encontradas junto con la evaluación" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <h5 class="container mt-5" >Respaldo Fotografico</h5>
+        </div>    
+              <div class="image-container">
+                <h5>Imagen 1:</h5>
+                <img src="#" alt="Vista previa" class="img-fluid rounded">
+                <input type="file" class="form-control-file mt-3" accept="image/*">
+                  <div class="form-group mt-2">
+                    <label for="description">Descripción:</label>
+                    <input type="text" class="form-control" id="description" placeholder="Ingrese una descripción">
+                  </div>
+                        <h5>Imagen 2:</h5>
+                        <img src="#" alt="Vista previa" class="img-fluid rounded">
+                        <input type="file" class="form-control-file mt-3" accept="image/*">
+                        <div class="form-group mt-2">
+                          <label for="description">Descripción:</label>
+                          <input type="text" class="form-control" id="description" placeholder="Ingrese una descripción">
+                      </div>
+                        <h5>Imagen 3:</h5>
+                          <img src="#" alt="Vista previa" class="img-fluid rounded">
+                          <input type="file" class="form-control-file mt-3" accept="image/*">
+                          <div class="form-group mt-2">
+                            <label for="description">Descripción:</label>
+                            <input type="text" class="form-control" id="description" placeholder="Ingrese una descripción">
+                          </div>
+                          <h5>Imagen 4:</h5>
+                          <img src="#" alt="Vista previa" class="img-fluid rounded">
+                          <input type="file" class="form-control-file mt-3" accept="image/*">
+                          <div class="form-group mt-2">
+                            <label for="description">Descripción:</label>
+                            <input type="text" class="form-control" id="description" placeholder="Ingrese una descripción">
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </form>
+          <div class="container mt-5">
+          <form>
+            <div class="row">
+              <h5 class="container mt-2" >Observación y Evaluación</h5>
+            <div class="col-md-12 mt-2" class="form-floating">
+              <textarea class="form-control" placeholder="Escriba las obervaciones encontradas junto con la evaluación" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+          <div class="mt-3 mb-5">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Crear informe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Crear informe</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Esta seguro que quiere guardar el informe?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+          
+      
+          
+
+
+      
+  <script src="./js/bootstrap.min.js" ></script>
+
+  <script>
+    function mostrarMensaje() {
+      alert("¡Gracias por suscribirte!");
+    }
+    document.getElementById("boton").onclick = mostrarMensaje;
+  </script>
+
+      
+</body>
+</html>
