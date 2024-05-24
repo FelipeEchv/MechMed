@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra ubicación</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"  id="colorletras" onmouseover="cambiarColorTexto()" onmouseout="restaurarColorTexto()"><span>MechMed</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">¿TIENES DUDAS?</a>
+              </li></ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Correo electrónico" aria-label="correo">
+              <button class="btn btn-outline-success" type="submit" id="boton">Suscribete</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--final barra de navegación-->
+    <div id="map"></div>
+
+    <script>
+        var map = L.map('map').setView([-33.36336828768724, -70.6781315603532], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-33.36336828768724, -70.6781315603532]).addTo(map)
+            .bindPopup()
+            .openPopup('MechMed');
+    </script>
+</body>
+</html>
